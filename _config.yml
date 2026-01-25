@@ -1,0 +1,67 @@
+# Site Settings
+title: My Personal Blog
+description: A minimalist blog powered by Jekyll and GitHub Pages
+author: Your Name
+email: your.email@example.com
+url: "https://username.github.io" # Change to your GitHub Pages URL
+baseurl: "" # Leave empty for user site (username.github.io), or "/repo-name" for project site
+
+# Build Settings
+markdown: kramdown
+theme: null
+permalink: /:year/:month/:day/:title/
+
+# Kramdown Settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Pagination
+paginate: 10
+paginate_path: "/page/:num/"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Collections
+collections:
+  tags:
+    output: true
+    permalink: /tag/:name/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - README.md
+  - LICENSE
+
+# Social Links (optional)
+social:
+  github: username
+  twitter: username
+  linkedin: username
+
+# Comments (Giscus configuration)
+# Get your values from https://giscus.app
+comments:
+  enabled: true
+  giscus:
+    repo: "username/repo-name"
+    repo_id: "YOUR_REPO_ID"
+    category: "General"
+    category_id: "YOUR_CATEGORY_ID"
+    mapping: "pathname"
+    reactions_enabled: "1"
+    emit_metadata: "0"
+    theme: "light"
+    lang: "en"

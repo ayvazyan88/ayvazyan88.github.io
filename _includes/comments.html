@@ -1,0 +1,26 @@
+{% if site.comments.enabled and page.comments != false %}
+<div class="comments-section">
+  <h2>Comments</h2>
+  <div class="comments-wrapper">
+    <script src="https://giscus.app/client.js"
+            data-repo="{{ site.comments.giscus.repo }}"
+            data-repo-id="{{ site.comments.giscus.repo_id }}"
+            data-category="{{ site.comments.giscus.category }}"
+            data-category-id="{{ site.comments.giscus.category_id }}"
+            data-mapping="{{ site.comments.giscus.mapping }}"
+            data-strict="0"
+            data-reactions-enabled="{{ site.comments.giscus.reactions_enabled }}"
+            data-emit-metadata="{{ site.comments.giscus.emit_metadata }}"
+            data-input-position="bottom"
+            data-theme="{{ site.comments.giscus.theme }}"
+            data-lang="{{ site.comments.giscus.lang }}"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+  <p class="comments-info">
+    Comments are powered by <a href="https://giscus.app" target="_blank" rel="noopener noreferrer">Giscus</a>. 
+    To leave a comment, you'll need a GitHub account.
+  </p>
+</div>
+{% endif %}
