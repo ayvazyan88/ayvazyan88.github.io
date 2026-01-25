@@ -6,9 +6,11 @@ email: a@ayvazyan.net
 url: "https://anna.ayvazyan.net" # Change to your GitHub Pages URL
 baseurl: "" # Leave empty for user site (username.github.io), or "/repo-name" for project site
 
+remote_theme: "mmistakes/so-simple-theme@3.2.0"
+
 # Build Settings
 markdown: kramdown
-theme: null
+# theme: null
 permalink: /:year/:month/:day/:title/
 
 # Kramdown Settings
