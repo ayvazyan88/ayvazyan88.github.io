@@ -11,7 +11,7 @@ lang: ru
 # Change to your timezone › https://zones.arilyn.cc
 timezone: Europe/Moscow
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# jekyll-seo-tag here settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
 title: АННА Айвазян # the main title
