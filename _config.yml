@@ -4,8 +4,7 @@
 # remote_theme: cotes2020/jekyll-theme-chirpy
 theme: jekyll-theme-chirpy
 
-
-lang: en
+lang: ru
 
 # Change to your timezone › https://zones.arilyn.cc
 timezone: Europe/Moscow
