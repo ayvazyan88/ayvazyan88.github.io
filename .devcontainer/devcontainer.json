@@ -1,0 +1,27 @@
+{
+  name: Jekyll (Chirpy),
+  build: {
+    dockerfile: Dockerfile
+  },
+  forwardPorts: [4000],
+  portsAttributes: {
+    4000: {
+      label: Jekyll Server,
+      onAutoForward: openBrowser
+    }
+  },
+  postCreateCommand: bundle install,
+  customizations: {
+    vscode: {
+      extensions: [
+        rebornix.Ruby,
+        shopify.ruby-lsp,
+        yzhang.markdown-all-in-one
+      ],
+      settings: {
+        editor.wordWrap: on,
+        editor.lineHeight: 1.7
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+.language-plaintext {
+  .code-header {
+    display: none;
+  }
+  .highlight {
+    padding: 12px 0;
+
+    pre {
+      white-space: pre-wrap;
+      overflow: visible;
+    }
+  }
+}
