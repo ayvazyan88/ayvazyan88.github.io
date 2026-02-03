@@ -1,3 +1,5 @@
+publish.sh
+
 # Jekyll
 _site/
 .sass-cache/
